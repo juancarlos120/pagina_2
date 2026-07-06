@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Carros Esportivos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #ff4154;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .car-card {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 1.5rem;
+        }
+
+        .car-info h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #ff4154;
+        }
+
+        .car-info p {
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+
+        .specs-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            background-color: #222;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .specs-list li {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .specs-list li strong {
+            color: #ff4154;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .car-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lendas Automotivas</h1>
+        <p>Desempenho, design e velocidade</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Carro 1: R34 -->
+        <div class="car-card">
+            <img src="https://unsplash.com" alt="Nissan Skyline GT-R R34" class="car-image">
+            <div class="car-info">
+                <h2>Nissan Skyline GT-R R34</h2>
+                <p>O R34 é considerado um ícone absoluto da cultura JDM. Com sua tração integral e motor lendário, domina tanto as ruas quanto as pistas de corrida.</p>
+                <ul class="specs-list">
+                    <li><strong>Motor:</strong> 2.6L RB26DETT Twin-Turbo</li>
+                    <li><strong>Potência:</strong> 280 cv (Original)</li>
+                    <li><strong>Transmissão:</strong> Manual de 6 velocidades</li>
+                    <li><strong>Tração:</strong> Integral ATTESA E-TS</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Carro 2: R35 -->
+        <div class="car-card">
+            <img src="https://unsplash.com" alt="Nissan GT-R R35" class="car-image">
+            <div class="car-info">
+                <h2>Nissan GT-R R35</h2>
+                <p>Apelidado de "Godzilla", o R35 é um supercarro que revolucionou a engenharia moderna, oferecendo aceleração brutal e tecnologia de ponta.</p>
+                <ul class="specs-list">
+                    <li><strong>Motor:</strong> 3.8L VR38DETT V6 Twin-Turbo</li>
+                    <li><strong>Potência:</strong> 570 cv (Premium)</li>
+                    <li><strong>Transmissão:</strong> Dupla embreagem de 6 marchas</li>
+                    <li><strong>Tração:</strong> Integral (AWD)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Carro 3: BMW M3 -->
+        <div class="car-card">
+            <img src="https://unsplash.com" alt="BMW M3" class="car-image">
+            <div class="car-info">
+                <h2>BMW M3</h2>
+                <p>A síntese perfeita entre um carro de luxo e um esportivo de pista. A BMW M3 é a referência de sedã esportivo em todo o mundo.</p>
+                <ul class="specs-list">
+                    <li><strong>Motor:</strong> 3.0L M TwinPower Turbo 6-cil</li>
+                    <li><strong>Potência:</strong> Até 523 cv (Competition xDrive)</li>
+                    <li><strong>Transmissão:</strong> Manual 6-vel ou Automática 8-vel</li>
+                    <li><strong>Tração:</strong> Traseira ou Integral (xDrive)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Catálogo de Lendas Automotivas</p>
+    </footer>
+
+</body>
+</html>
